@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Laravel</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/home.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="antialiased">
+    <main class="landing">
+
+        <form>
+            <div class="heading">
+                <p>Sign in to access your account</p>
+            </div>
+
+            <div class="login">
+                <fieldset class="input_fields">
+                    <label class="font-bold text-gray-400" for='email'>Email</label>
+                    <input id='email' type='email' placeholder='' required />
+                    <span id="error_msg">Please enter a valid email</span>
+
+                </fieldset>
+
+                <fieldset class="input_fields">
+                    <label class="font-bold text-gray-400" for='password'>Password</label>
+                    <input id='password' type='password' placeholder='' required />
+                    <Link href='#'>Forgot Password?</Link>
+                </fieldset>
+                <button
+                    class="border-none font-medium rounded-lg flex gap-2 items-center justify-center px-8 py-4 bg-green-500 text-gray-50 text-base">
+                    Sign Up
+                </button>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>
