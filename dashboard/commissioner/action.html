@@ -106,18 +106,6 @@
 
             <section class='flex flex-col items-end box-border h-full gap-10 p-10'>
 
-                <div id="button_holder" class="flex w-full justify-end gap-10 items-center">
-                    <button class="flex items-center justify-center cursor-pointer bg-transparent border-none">
-                        <img src="../../assets/svg/eva_search-outline.svg" alt="">
-                    </button>
-                    <button
-                        class="border-none font-medium rounded-lg flex gap-2 items-center justify-center px-8 py-4 bg-green-500 text-gray-50 text-base">Add
-                        New File</button>
-                    <button style="border: 2px solid #32d583;"
-                        class="border-none font-medium rounded-lg flex gap-2 items-center justify-center px-8 py-4 border-green-500 text-green-500 text-base">Download
-                        Table</button>
-                </div>
-
                 <div class="flex flex-col justify-between w-full pb-10 overflow-scroll h-screen" style="z-index: '2'">
                     <div class="table">
                         <table>
@@ -129,7 +117,7 @@
                                 <td style="background: '#CAD9D0'" class=" flex px-8 py-4 justify-start w-72 text-black text-base font-semibold">Status</td>
                                 <td style="background: '#CAD9D0'" class=" flex px-8 py-4 justify-start w-72 text-black text-base font-semibold">Location</td>
                                 <td style="background: '#CAD9D0'" class=" flex px-8 py-4 justify-start w-32 text-black text-base font-semibold">Date</td>
-                                <td class="flex px-8 py-4 justify-start w-max text-transparent text-base font-semibold border-none">More</td>
+                                <td class="flex px-8 py-4 justify-start w-max text-transparent text-base font-semibold border-none">Action</td>
                             </th>
 
                             <tr>
@@ -141,46 +129,6 @@
                 </div>
 
 
-                <!-- {{-- {
-                    stats && (
-                        <>
-                            <div class="w-full flex">
-                     a           <canvas id="myChart" class="w-full h-40"></canvas>
-    
-                            </div>
-                            <div id={styles["button_holder"]} class="flex w-full justify-end gap-10 items-center">
-                                <Button>Download Table</Button>
-                            </div>
-    
-                            <Stats actions={[]} headers={[]} content={statrows} />
-                        </>
-                    )
-                }
-    
-                {
-                    issues && (
-                        <Issues unresolved={[]} review={[]} resolved={[]} />
-                    )
-                }
-    
-                {
-                    logs && (
-                        <>
-                            <div id={styles["button_holder"]} class="flex w-full justify-end gap-10 items-center">
-                                <Button>Download Table</Button>
-                            </div>
-                            
-                            <Logs actions={[]} headers={[]} content={logrows} filelocation={undefined} />
-                        </>
-                    )
-                }
-    
-    
-                {
-                    action && (
-                        <QSSAction cancel={() => setAction(false)} mdas={MDAS} />
-                    )
-                } --}} -->
             </section>
         </section>
     </main>
