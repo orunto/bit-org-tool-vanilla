@@ -84,19 +84,19 @@
 
                 <div class="flex px-8 py-10 border-2 border-gray-900 gap-6 rounded-lg items-start relative">
                     <article class="flex gap-2">
-                        <img src="../../assets/svg/octicon_bell-16.svg" onclick="" class="cursor-pointer" alt="">
+                        <img id="bell" src="../../assets/svg/octicon_bell-16.svg" onclick="" class="cursor-pointer" alt="">
 
-                        <div class="hidden flex flex-col p-8 absolute bg-white top-24 -left-16 shadow-md z-10">
+                        <div id="notifs" class="hidden flex flex-col p-8 absolute bg-white top-24 -left-16 shadow-md z-10">
                             <p>No Notifications yet</p>
 
                         </div>
 
                         <p class="flex flex-col relative">
                             <b class="text-base flex items-center">Tolu
-                                <img src="../../assets/svg/gridicons_dropdown.svg" alt="">
+                                <img id="dropdown" src="../../assets/svg/gridicons_dropdown.svg" alt="">
                             </b>
                             <span class="text-sm">Beta tester</span>
-                            <a href="/api/logout"
+                            <a id="logout" href="/api/logout"
                                 class="hidden flex items-center justify-center p-4 text-red-600 absolute bg-white shadow-md shadow-slate-200 -right-4 top-12">
                                 Logout
                                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
