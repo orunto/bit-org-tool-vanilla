@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../assets/css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../../assets/css/styles.css">
-
+    <script src="../../assets/js/modal.js"></script>
 </head>
 
 <body>
@@ -116,12 +116,15 @@
                     </button>
                 </div>
 
-                <div class="flex fixed flex-col border border-black box-border rounded-lg p-8 bg-white gap-8" style="width: 700px; height: 400px; border: 1px solid #CAD9D0; top: calc(50vh - 200px); left: calc(50vw - 350px); transition: 0.3s; translate: 0 -1000px;";>
+                <div id="reasons"
+                    class="flex fixed flex-col border border-black box-border rounded-lg p-8 bg-white gap-8"
+                    style="width: 700px; height: 400px; border: 1px solid #CAD9D0; top: calc(50vh - 200px); left: calc(50vw - 350px); transition: 0.3s; translate: 0 -1000px;"
+                    ;>
                     <h2 class="m-0 text-black text-xl font-bold">Reason for rejection</h2>
                     <textarea name="" id="" class="w-full h-full" style="border: 1px solid #CAD9D0;"></textarea>
 
                     <div id="button_holder" class="flex w-full justify-end gap-10 items-center">
-                        <button 
+                        <button id="cancel"
                             class="border-none font-medium rounded-lg flex gap-2 items-center justify-center px-8 py-4 border-green-500 text-white text-base">Cancel</button>
                         <button style="border: 2px solid #32d583;"
                             class="border-none font-medium rounded-lg flex gap-2 items-center justify-center px-8 py-4 border-green-500 text-green-500 text-base">Finish</button>
