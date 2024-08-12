@@ -105,23 +105,59 @@
             </nav>
 
             <section class='flex flex-col items-end box-border h-full gap-10 p-10'>
+                <div id="button_holder" class="flex w-full justify-end gap-10 items-center">
+                    <button class="flex hidden items-center justify-center cursor-pointer bg-transparent border-none">
+                        <img src="../../assets/svg/eva_search-outline.svg" alt="">
+                    </button>
+                    <button style="border: 2px solid #32d583;"
+                        class="border-none font-medium rounded-lg flex gap-2 items-center justify-center px-8 py-4 border-green-500 text-green-500 text-base"
+                        id="test">
+                        Test Modal
+                    </button>
+                </div>
 
+                <div class="flex fixed flex-col border border-black box-border rounded-lg p-8 bg-white gap-8" style="width: 700px; height: 400px; border: 1px solid #CAD9D0; top: calc(50vh - 200px); left: calc(50vw - 350px); transition: 0.3s; translate: 0 -1000px;";>
+                    <h2 class="m-0 text-black text-xl font-bold">Reason for rejection</h2>
+                    <textarea name="" id="" class="w-full h-full" style="border: 1px solid #CAD9D0;"></textarea>
+
+                    <div id="button_holder" class="flex w-full justify-end gap-10 items-center">
+                        <button 
+                            class="border-none font-medium rounded-lg flex gap-2 items-center justify-center px-8 py-4 border-green-500 text-white text-base">Cancel</button>
+                        <button style="border: 2px solid #32d583;"
+                            class="border-none font-medium rounded-lg flex gap-2 items-center justify-center px-8 py-4 border-green-500 text-green-500 text-base">Finish</button>
+                    </div>
+                </div>
                 <div class="flex flex-col justify-between w-full pb-10 overflow-scroll h-screen" style="z-index: '2'">
                     <div class="table">
                         <table>
                             <th>
-                                <td style="background: '#CAD9D0'" class=" flex px-8 py-4 justify-start w-72 text-black text-base font-semibold">MDA</td>
-                                <td style="background: '#CAD9D0'" class=" flex px-8 py-4 justify-start w-72 text-black text-base font-semibold">File Name</td>
-                                <td style="background: '#CAD9D0'" class=" flex px-8 py-4 justify-start w-72 text-black text-base font-semibold">File Number</td>
-                                <td style="background: '#CAD9D0'" class=" flex px-8 py-4 justify-start w-72 text-black text-base font-semibold">Amount</td>
-                                <td style="background: '#CAD9D0'" class=" flex px-8 py-4 justify-start w-72 text-black text-base font-semibold">Status</td>
-                                <td style="background: '#CAD9D0'" class=" flex px-8 py-4 justify-start w-72 text-black text-base font-semibold">Location</td>
-                                <td style="background: '#CAD9D0'" class=" flex px-8 py-4 justify-start w-32 text-black text-base font-semibold">Date</td>
-                                <td class="flex px-8 py-4 justify-start w-max text-transparent text-base font-semibold border-none">Action</td>
+                            <td style="background: '#CAD9D0'"
+                                class=" flex px-8 py-4 justify-start w-72 text-black text-base font-semibold">MDA</td>
+                            <td style="background: '#CAD9D0'"
+                                class=" flex px-8 py-4 justify-start w-72 text-black text-base font-semibold">File Name
+                            </td>
+                            <td style="background: '#CAD9D0'"
+                                class=" flex px-8 py-4 justify-start w-72 text-black text-base font-semibold">File
+                                Number</td>
+                            <td style="background: '#CAD9D0'"
+                                class=" flex px-8 py-4 justify-start w-72 text-black text-base font-semibold">Amount
+                            </td>
+                            <td style="background: '#CAD9D0'"
+                                class=" flex px-8 py-4 justify-start w-72 text-black text-base font-semibold">Status
+                            </td>
+                            <td style="background: '#CAD9D0'"
+                                class=" flex px-8 py-4 justify-start w-72 text-black text-base font-semibold">Location
+                            </td>
+                            <td style="background: '#CAD9D0'"
+                                class=" flex px-8 py-4 justify-start w-32 text-black text-base font-semibold">Date</td>
+                            <td
+                                class="flex px-8 py-4 justify-start w-max text-transparent text-base font-semibold border-none">
+                                Action</td>
                             </th>
 
                             <tr>
-                            <td style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center;"class="text-2xl w-max">Nothing to see here yet. Try other tables</td>
+                                <td style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center;"
+                                    class="text-2xl w-max">Nothing to see here yet. Try other tables</td>
 
                             </tr>
                         </table>

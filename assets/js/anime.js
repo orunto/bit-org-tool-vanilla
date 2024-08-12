@@ -19,5 +19,9 @@ window.onload = function () {
     document.getElementById("menu").addEventListener("click", show);
   }
 
+  function reason() {
+    document.get
+  }
   document.getElementById("menu").addEventListener("click", show);
+  document.getElementById("test").addEventListener("click", reason);
 };
